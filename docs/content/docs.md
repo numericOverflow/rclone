@@ -3224,7 +3224,7 @@ at rest or transfer. Detailed instructions for popular OSes:
 - Add the password retrieval instruction
 
   ```powershell
-  [Environment]::SetEnvironmentVariable("RCLONE_PASSWORD_COMMAND", "[System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR((Import-Clixml -Path "rclone-credential.xml").Password))")
+  [Environment]::SetEnvironmentVariable('RCLONE_PASSWORD_COMMAND', '[System.Runtime.InteropServices.Marshal]::PtrToStringAuto([System.Runtime.InteropServices.Marshal]::SecureStringToBSTR((Import-Clixml -Path "rclone-credential.xml").Password))')
   ```
 
 #### Encrypt the config file (all systems)
